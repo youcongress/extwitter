@@ -32,20 +32,26 @@ defmodule ExTwitter.OAuth do
     signed_params = get_signed_params(
       "get", url, params, consumer_key, consumer_secret, access_token, access_token_secret)
     encoded_params = URI.encode_query(signed_params)
-    request = {to_charlist(url <> "?" <> encoded_params), []}
-    send_httpc_request(:get, request, options)
+    send_httpc_request(:get, "#{url}?#{encoded_params}", options)
   end
 
   def oauth_post(url, params, consumer_key, consumer_secret, access_token, access_token_secret, options) do
     signed_params = get_signed_params(
       "post", url, params, consumer_key, consumer_secret, access_token, access_token_secret)
     encoded_params = URI.encode_query(signed_params)
-    request = {to_charlist(url), [], 'application/x-www-form-urlencoded', encoded_params}
-    send_httpc_request(:post, request, options)
+    send_httpc_request(:post, "#{url}?#{encoded_params}", options)
   end
 
   def send_httpc_request(method, request, options) do
-    :httpc.request(method, request, [{:autoredirect, false}] ++ proxy_option(), options)
+    :hackney.request(method, request, [], "", options)
+    |> case do
+      {:ok, status, headers, client_ref} ->
+        {:ok, body} = :hackney.body(client_ref)
+        {:ok, {{nil, status, nil}, headers, body}} 
+
+      error ->
+        error
+    end
   end
 
   defp get_signed_params(method, url, params, consumer_key, consumer_secret, access_token, access_token_secret) do
