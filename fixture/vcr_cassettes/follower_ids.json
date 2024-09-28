@@ -10,7 +10,7 @@
           "autoredirect": "false"
         }
       },
-      "url": "https://api.twitter.com/1.1/followers/ids.json"
+      "url": "https://api.x.com/1.1/followers/ids.json"
     },
     "response": {
       "body": "{\"ids\":[915484134],\"next_cursor\":8882581338626179201,\"next_cursor_str\":\"8882581338626179201\",\"previous_cursor\":0,\"previous_cursor_str\":\"0\"}",

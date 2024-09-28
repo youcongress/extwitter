@@ -1,7 +1,7 @@
 [
   {
     "request": {
-      "url": "https://api.twitter.com/1.1/geo/search.json",
+      "url": "https://api.x.com/1.1/geo/search.json",
       "headers": [],
       "method": "get",
       "body": "",
@@ -41,7 +41,7 @@
         "x-transaction": "32f25d96256d5a08",
         "x-xss-protection": "1; mode=block"
       },
-      "body": "{\"result\":{\"places\":[{\"id\":\"94965b2c45386f87\",\"url\":\"https:\\/\\/api.twitter.com\\/1.1\\/geo\\/id\\/94965b2c45386f87.json\",\"place_type\":\"admin\",\"name\":\"New York\",\"full_name\":\"New York, US\",\"country_code\":\"US\",\"country\":\"United States\",\"contained_within\":[{\"id\":\"96683cc9126741d1\",\"url\":\"https:\\/\\/api.twitter.com\\/1.1\\/geo\\/id\\/96683cc9126741d1.json\",\"place_type\":\"country\",\"name\":\"United States\",\"full_name\":\"United States\",\"country_code\":\"US\",\"country\":\"United States\",\"bounding_box\":null,\"attributes\":{}}],\"bounding_box\":{\"type\":\"Polygon\",\"coordinates\":[[[-79.76259,40.477399],[-71.777491,40.477399],[-71.777491,45.015865],[-79.76259,45.015865]]]},\"attributes\":{}}]},\"query\":{\"url\":\"https:\\/\\/api.twitter.com\\/1.1\\/geo\\/search.json?<REMOVED>\",\"type\":\"search\",\"params\":{\"accuracy\":0.0,\"granularity\":\"neighborhood\",\"query\":\"new_york\",\"autocomplete\":false,\"trim_place\":false}}}"
+      "body": "{\"result\":{\"places\":[{\"id\":\"94965b2c45386f87\",\"url\":\"https:\\/\\/api.x.com\\/1.1\\/geo\\/id\\/94965b2c45386f87.json\",\"place_type\":\"admin\",\"name\":\"New York\",\"full_name\":\"New York, US\",\"country_code\":\"US\",\"country\":\"United States\",\"contained_within\":[{\"id\":\"96683cc9126741d1\",\"url\":\"https:\\/\\/api.x.com\\/1.1\\/geo\\/id\\/96683cc9126741d1.json\",\"place_type\":\"country\",\"name\":\"United States\",\"full_name\":\"United States\",\"country_code\":\"US\",\"country\":\"United States\",\"bounding_box\":null,\"attributes\":{}}],\"bounding_box\":{\"type\":\"Polygon\",\"coordinates\":[[[-79.76259,40.477399],[-71.777491,40.477399],[-71.777491,45.015865],[-79.76259,45.015865]]]},\"attributes\":{}}]},\"query\":{\"url\":\"https:\\/\\/api.x.com\\/1.1\\/geo\\/search.json?<REMOVED>\",\"type\":\"search\",\"params\":{\"accuracy\":0.0,\"granularity\":\"neighborhood\",\"query\":\"new_york\",\"autocomplete\":false,\"trim_place\":false}}}"
     }
   }
 ]

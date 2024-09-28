@@ -8,7 +8,7 @@
         "httpc_options": [],
         "http_options": []
       },
-      "url": "~r/https://api.twitter.com/1.1/followers/ids.json\\?.+/"
+      "url": "~r/https://api.x.com/1.1/followers/ids.json\\?.+/"
     },
     "response": {
       "body": "failed_connect",

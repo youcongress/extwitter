@@ -10,7 +10,7 @@
           "autoredirect": "false"
         }
       },
-      "url": "https://api.twitter.com/1.1/friends/ids.json"
+      "url": "https://api.x.com/1.1/friends/ids.json"
     },
     "response": {
       "body": "{\"ids\":[27558636],\"next_cursor\":1487324609822240028,\"next_cursor_str\":\"1487324609822240028\",\"previous_cursor\":0,\"previous_cursor_str\":\"0\"}",

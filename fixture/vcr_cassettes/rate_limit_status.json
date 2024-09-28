@@ -10,7 +10,7 @@
           "autoredirect": "false"
         }
       },
-      "url": "https://api.twitter.com/1.1/application/rate_limit_status.json"
+      "url": "https://api.x.com/1.1/application/rate_limit_status.json"
     },
     "response": {
       "body": "{\"rate_limit_context\":{\"access_token\":\"<REMOVED>\"},\"resources\":{\"statuses\":{\"\\/statuses\\/mentions_timeline\":{\"limit\":15,\"remaining\":15,\"reset\":1409459909},\"\\/statuses\\/lookup\":{\"limit\":180,\"remaining\":180,\"reset\":1409459909},\"\\/statuses\\/show\\/:id\":{\"limit\":180,\"remaining\":180,\"reset\":1409459909},\"\\/statuses\\/oembed\":{\"limit\":180,\"remaining\":180,\"reset\":1409459909},\"\\/statuses\\/retweeters\\/ids\":{\"limit\":15,\"remaining\":15,\"reset\":1409459909},\"\\/statuses\\/home_timeline\":{\"limit\":15,\"remaining\":15,\"reset\":1409459909},\"\\/statuses\\/user_timeline\":{\"limit\":180,\"remaining\":180,\"reset\":1409459909},\"\\/statuses\\/friends\":{\"limit\":15,\"remaining\":15,\"reset\":1409459909},\"\\/statuses\\/retweets\\/:id\":{\"limit\":60,\"remaining\":60,\"reset\":1409459909},\"\\/statuses\\/retweets_of_me\":{\"limit\":15,\"remaining\":15,\"reset\":1409459909}}}}",

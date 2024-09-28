@@ -10,7 +10,7 @@
           "autoredirect": "false"
         }
       },
-      "url": "https://api.twitter.com/oauth/access_token"
+      "url": "https://api.x.com/oauth/access_token"
     },
     "response": {
       "body": "oauth_token=11111111-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&oauth_token_secret=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&user_id=28487251&screen_name=julianobs&x_auth_expires=0",

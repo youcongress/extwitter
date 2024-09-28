@@ -610,7 +610,7 @@ defmodule ExTwitterTest do
     # Check generated oauth authorize url against twitter url pattern
     # Validating the URL actually works is essentially a manual test
     token = "some_token"
-    {:ok, regex} = Regex.compile("^https://api.twitter.com/oauth/authorize\\?oauth_token=" <> token)
+    {:ok, regex} = Regex.compile("^https://api.x.com/oauth/authorize\\?oauth_token=" <> token)
 
     {:ok, authorize_url} = ExTwitter.authorize_url(token)
 
@@ -621,7 +621,7 @@ defmodule ExTwitterTest do
     # Check generated oauth authenticate url against twitter url pattern
     # Validating the URL actually works is essentially a manual test
     token = "some_token"
-    {:ok, regex} = Regex.compile("^https://api.twitter.com/oauth/authenticate\\?oauth_token=" <> token)
+    {:ok, regex} = Regex.compile("^https://api.x.com/oauth/authenticate\\?oauth_token=" <> token)
 
     {:ok, authenticate_url} = ExTwitter.authenticate_url(token)
 

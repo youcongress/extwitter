@@ -10,7 +10,7 @@
           "autoredirect": "false"
         }
       },
-      "url": "https://api.twitter.com/oauth/request_token"
+      "url": "https://api.x.com/oauth/request_token"
     },
     "response": {
       "body": "oauth_token=6nktKQAAAAAAgwhYAAABT3ozY3I&oauth_token_secret=hNxn0C9ewlruqFi1YiFGkdyb0pST8Fvf&oauth_callback_confirmed=true",

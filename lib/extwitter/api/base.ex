@@ -8,7 +8,7 @@ defmodule ExTwitter.API.Base do
   @default_chunk_size 65536 # 64kb
 
   @doc """
-  Send request to the api.twitter.com server.
+  Send request to the api.x.com server.
   """
   def request(method, path, params \\ []) do
     do_request(method, request_url(path), params)
@@ -96,7 +96,7 @@ defmodule ExTwitter.API.Base do
   end
 
   def request_url(path) do
-    "https://api.twitter.com/#{path}"
+    "https://api.x.com/#{path}"
   end
 
   defp upload_url(path) do
